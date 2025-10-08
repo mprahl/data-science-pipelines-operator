@@ -32,7 +32,7 @@ spec:
         - --MaxConcurrentReconciles=$(MAX_CONCURRENT_RECONCILES)
         - --config
         - /home/config
-        image: $(IMAGES_DSPO)
+        image: quay.io/mprahl/data-science-pipelines-operator:kube-rbac-proxy
         name: manager
         # imagePullPolicy: default - https://kubernetes.io/docs/concepts/containers/images/#imagepullpolicy-defaulting
         env:
